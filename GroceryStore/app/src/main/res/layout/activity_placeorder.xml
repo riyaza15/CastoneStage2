@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:id="@+id/toolbar"
+            android:background="@color/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative_lay1"
+            android:visibility="visible">
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:id="@+id/radiogroup">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_cash_on"
+                    android:text="@string/cash_on_delivery"
+                    android:layout_marginTop="@dimen/paddinng_large_15"
+                    android:layout_marginLeft="@dimen/paddinng_large_15" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/radio_payment_gateway"
+                    android:text="@string/paymentGateway"
+                    android:layout_marginTop="@dimen/paddinng_large_15"
+                    android:layout_marginLeft="@dimen/paddinng_large_15"
+                    android:layout_below="@id/radio_cash_on"
+                    android:checked="true"/>
+
+
+            </RadioGroup>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/total_price"
+                android:textColor="@color/black"
+                android:layout_below="@id/radiogroup"
+                android:layout_marginLeft="@dimen/paddinng_large_15"
+                android:layout_marginTop="@dimen/padding_medium_10dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/place_order"
+                android:text="@string/place_order"
+                android:gravity="center_horizontal"
+                android:background="@drawable/rounded_green_login"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/padding_too_large_30"
+                android:layout_marginLeft="@dimen/padding_too_large_30"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:layout_marginBottom="@dimen/padding_too_large_30"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relative_lay2"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/thankyou"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/padding_medium_10dp"
+                android:text="@string/thankyou"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/thankyou"
+                android:id="@+id/you_orderplaced"
+                android:textStyle="normal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/grey_light"
+                android:layout_marginTop="@dimen/padding_medium_10dp"
+                android:text="@string/your_orderPlaced"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                android:id="@+id/imagedone"
+                android:src="@mipmap/ic_select_done"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/you_orderplaced"
+                android:layout_marginTop="@dimen/paddinng_large_15"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderId"
+                android:layout_below="@id/imagedone"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:text="@string/orderid"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/padding_medium_10dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/orderIdtxt"
+                android:layout_below="@id/orderId"
+                android:layout_centerHorizontal="true"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@color/black"
+                android:layout_marginTop="@dimen/padding_medium_10dp"
+                android:gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/orderIdtxt"
+                android:id="@+id/orderdeliveryinfo"
+                android:textStyle="normal"
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textColor="@color/grey_light"
+                android:layout_marginTop="@dimen/padding_medium_10dp"
+                android:text="@string/we_will_inform_you"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/continueshipping"
+                android:text="@string/continue_shipping"
+                android:gravity="center_horizontal"
+                android:background="@drawable/rounded_green_login"
+                android:textColor="@color/white"
+                android:layout_marginRight="@dimen/padding_too_large_30"
+                android:layout_marginLeft="@dimen/padding_too_large_30"
+                android:layout_marginTop="@dimen/padding_extra_large_20"
+                android:layout_marginBottom="@dimen/padding_too_large_30"
+                android:layout_alignParentBottom="true"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

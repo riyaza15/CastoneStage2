@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_small_5"
+    android:paddingBottom="@dimen/padding_small_5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/title"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true" />
+
+    <android.support.v7.widget.AppCompatRatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/review_rating"
+        android:numStars="5"
+        android:stepSize=".5"
+        android:rating="3"
+        android:isIndicator="true"
+        style="@style/ratingBarSmall"
+        android:layout_marginLeft="@dimen/padding_medium_10dp"
+        android:layout_toRightOf="@id/title"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/descrip"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/title"
+        android:paddingTop="@dimen/padding_small_5"
+        android:paddingBottom="@dimen/padding_small_5"
+        android:fontFamily="serif-monospace"
+        android:lineSpacingExtra="2dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/postedby"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:layout_alignParentLeft="true"
+        android:text="@string/postedby"
+        android:layout_below="@id/descrip"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:textStyle="normal"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/descrip"
+        android:layout_toRightOf="@id/postedby"
+        android:layout_marginLeft="@dimen/padding_small_5"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:layout_below="@id/descrip"
+        android:layout_toRightOf="@id/username"
+        android:layout_marginLeft="@dimen/padding_small_5"/>
+
+
+
+</RelativeLayout>

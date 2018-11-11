@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/padding_medium_10dp"
+    android:paddingTop="@dimen/padding_small_5"
+    android:paddingBottom="@dimen/padding_small_5"
+    android:paddingLeft="@dimen/padding_medium_10dp"
+    android:paddingRight="@dimen/padding_medium_10dp"
+    android:background="@drawable/rounded_corner_white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_id_txt"
+        android:text="@string/orderid"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/padding_small_5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_id"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@id/order_id_txt"
+        android:layout_marginBottom="@dimen/padding_small_5"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_address_txt"
+        android:text="@string/address"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        android:layout_below="@id/order_id_txt"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/padding_small_5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_shipping"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/grey_light"
+        android:layout_below="@id/order_id"
+        android:layout_toRightOf="@id/order_address_txt"
+        android:layout_toLeftOf="@id/order_viewdetails"
+        android:layout_marginRight="@dimen/padding_small_5"
+        android:layout_marginBottom="@dimen/padding_small_5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_price_txt"
+        android:text="@string/pricetag"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        android:layout_below="@id/order_shipping"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="@dimen/padding_small_5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_price"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/grey_light"
+        android:layout_below="@id/order_shipping"
+        android:layout_toRightOf="@id/order_price_txt"
+        android:layout_marginBottom="@dimen/padding_small_5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_date"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/black"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/padding_small_5"
+        android:layout_marginTop="@dimen/padding_small_5"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_viewdetails"
+        android:text="@string/view_details"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorAccent"
+        android:layout_below="@id/order_date"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/padding_small_5"/>
+
+</RelativeLayout>

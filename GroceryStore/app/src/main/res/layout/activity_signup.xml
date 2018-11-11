@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="160dp"
+            android:id="@+id/logo"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/app_logo"
+            android:layout_below="@id/btn_skip"
+            android:layout_marginTop="@dimen/padding_too_large_30"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fullname"
+            android:layout_below="@id/logo"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/full_name"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/user_email"
+            android:layout_below="@id/fullname"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/email"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_number"
+            android:layout_below="@id/user_email"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/phone_no"
+            android:inputType="phone"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:layout_below="@id/phone_number"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/username"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:inputType="textPassword"
+            android:layout_below="@id/username"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/password"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/retype_password"
+            android:inputType="textPassword"
+            android:layout_below="@id/password"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"
+            android:paddingLeft="@dimen/padding_small_5"
+            android:paddingTop="@dimen/padding_small_5"
+            android:hint="@string/retype_password"
+            android:maxLines="1"
+            android:singleLine="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/create_account"
+            android:text="@string/create_account"
+            android:gravity="center_horizontal"
+            android:background="@drawable/rounded_green_login"
+            android:textColor="@color/white"
+            android:layout_below="@id/retype_password"
+            android:layout_marginRight="@dimen/padding_too_large_30"
+            android:layout_marginLeft="@dimen/padding_too_large_30"
+            android:layout_marginTop="@dimen/padding_extra_large_20"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:id="@+id/layout_signin"
+            android:layout_below="@id/create_account"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="@dimen/padding_too_large_30"
+            android:layout_marginBottom="@dimen/padding_extra_large_20">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/already_member"
+                android:text="@string/already_member"
+                android:textColor="@color/txt_color"
+                android:layout_marginRight="@dimen/padding_small_5"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/signin_here"
+                android:text="@string/signin"
+                android:textColor="@color/colorAccent" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

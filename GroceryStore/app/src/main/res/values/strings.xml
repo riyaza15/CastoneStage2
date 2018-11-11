@@ -1,0 +1,129 @@
+<resources>
+    <string name="app_name">Grocery Store</string>
+
+    <string name="skip">Skip</string>
+    <string name="phone_no">Phone number</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="new_user">New User?</string>
+    <string name="signup_here">Signup Here</string>
+    <string name="or">OR</string>
+
+    <string name="already_member">Already Member?</string>
+    <string name="signin">Signin here</string>
+    <string name="submit">Submit</string>
+
+    <string name="full_name">Full name</string>
+    <string name="retype_password">retype-Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="username">Username</string>
+
+    <string name="is_invalid"> is invalid</string>
+    <string name="password_not_match">Password not matched</string>
+
+    <string name="ok">Ok</string>
+    <string name="network_not_connected"> There is no network connection right now. Please try again.</string>
+    <string name="failed_request">Please try again...</string>
+
+    <string name="otp_has_send">OTP has send to you phone number </string>
+    <string name="otp">OTP</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="otp_not_match">OTP is incorrect</string>
+    <string name="create_new_password">Create New Password </string>
+
+    <string name="home">Home</string>
+    <string name="new_product">New Product</string>
+    <string name="my_account">My Account</string>
+    <string name="wishlist">Wish List</string>
+    <string name="logout">Logout</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="new_products">New Products</string>
+    <string name="Baby_Food">Baby Food </string>
+    <string name="Dry_Frits">Dry Fruits</string>
+    <string name="Vegitable">Vegitable</string>
+
+    <string name="qty">Qty.</string>
+    <string name="related_prod">Related Products</string>
+    <string name="overview">Overview</string>
+    <string name="details">Details</string>
+    <string name="review">Review</string>
+    <string name="instock">In Stock</string>
+    <string name="outofstock">Out of Stock</string>
+
+
+    <string name="write_review">Write a Review</string>
+    <string name="your_rating">Your Rating</string>
+    <string name="review_summery">Summery</string>
+    <string name="postedby">Posted By </string>
+    <string name="add_to_cart">Successfully added into cart.</string>
+    <string name="fail_add_to_cart">Please try again. Unable to add into cart.</string>
+    <string name="network_error">Please try again. Network not responding</string>
+
+    <string name="add_to_wishlist">Successfully Added into user wishlist</string>
+    <string name="fail_add_to_wishlist">Please try again, Fail to add into user wishlist.</string>
+    <string name="search">Search</string>
+    <string name="cart">Cart</string>
+    <string name="search_name">Search Name</string>
+    <string name="delivery_date">Deliver in 3-4 Days</string>
+
+    <string name="continue_tag">Continue</string>
+    <string name="fail_toGetcart">Please try again, Fail to get user cart details</string>
+    <string name="you_have">You have</string>
+    <string name="product_in_cart"> product in cart.</string>
+    <string name="fail_togetwishlist">Please try again, Fail to get User Wishlist.</string>
+    <string name="fail_todeletecart">Please Try Again, Fail to delete cart item.</string>
+    <string name="fail_todeletewishlist">Please Try Again, Fail to delete wish list item.</string>
+    <string name="fail_toeditcart">Please Try Again, Fail to edit cart.</string>
+    <string name="no_prod_into_cart">You do not have any product to purchase </string>
+
+    <string name="prod_name">Product Name</string>
+    <string name="price">Price</string>
+    <string name="cart_subtotal">Cart Subtotal</string>
+    <string name="shipping_fee">Shipping Fee</string>
+    <string name="order_total">Order Total</string>
+    <string name="place_order">Place Order</string>
+
+    <string name="fail_toordersummery">Fail to get Order Summery, Please try again.</string>
+    <string name="fail_toorderhistory">Fail to get Order History, Please try again.</string>
+
+    <string name="billing_addrss">Billing Address</string>
+    <string name="shipping_address">Shipping Address</string>
+    <string name="add_address">Add Address</string>
+
+    <string name="country">Country</string>
+    <string name="address_line1">Address line 1</string>
+    <string name="address_line2">Address line 2</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="state">State</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="save_continue">Save &amp; Continue</string>
+    <string name="fail_toaddaddress">Fail to add new Address. Please try again.</string>
+    <string name="fail_togetaddress">Fail to get user address, Please try again.</string>
+
+    <string name="select_address">Please select shipping address</string>
+
+    <string name="cash_on_delivery">Cash On Delivery</string>
+    <string name="paymentGateway">Choose Payment Gateway</string>
+
+    <string name="thankyou">Thank You</string>
+    <string name="your_orderPlaced">Your Order Has \n Placced Successfully</string>
+    <string name="we_will_inform_you">We will email and SMS you \n about your order info and delivery date.</string>
+    <string name="continue_shipping">Continue Shipping</string>
+    <string name="failed_to_placeOrder"> Failed To Place Order. Your Amount will be refund within 7 Days.</string>
+
+    <string name="order_history">My Order History</string>
+    <string name="view_details">View Details</string>
+    <string name="orderinformation">Order Information</string>
+    <string name="orderid">Order ID: </string>
+    <string name="address">Address : </string>
+    <string name="pricetag">Price :</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+
+
+</resources>

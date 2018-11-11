@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small_5"
+        android:id="@+id/prod_details"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textSize="@dimen/txt_size_extra_large_15"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/price_old"
+        android:layout_marginRight="@dimen/padding_small_5"
+        android:layout_marginTop="@dimen/padding_medium_10dp"
+        android:fontFamily="serif-monospace"
+        android:lineSpacingExtra="2.5dp"/>
+
+</LinearLayout>

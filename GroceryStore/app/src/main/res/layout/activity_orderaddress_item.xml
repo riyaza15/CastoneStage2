@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/address_layoutmain"
+    android:background="@drawable/boarder_black_rounder_white"
+    android:paddingTop="@dimen/padding_small_5"
+    android:paddingBottom="@dimen/padding_small_5"
+    android:paddingLeft="@dimen/padding_medium_10dp"
+    android:paddingRight="@dimen/padding_medium_10dp"
+    android:layout_margin="@dimen/padding_small_5">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fullname"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/padding_small_5"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fulladdress"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/fullname"
+        android:layout_marginBottom="@dimen/padding_small_5"
+        android:fontFamily="monospace"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/phonenumber"
+        android:textStyle="normal"
+        android:textColor="@color/black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/fulladdress"
+        android:layout_marginBottom="@dimen/padding_small_5"
+        android:fontFamily="serif-monospace" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageselect"
+        android:src="@mipmap/ic_select_done"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/paddinng_large_15"
+        android:visibility="gone"/>
+
+</RelativeLayout>
